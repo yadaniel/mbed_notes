@@ -78,3 +78,17 @@ GCC_ARM_PATH=C:\GNU_Tools_ARM_Embedded\2017\bin
 TOOLCHAIN=GCC_ARM
 TARGET=NUCLEO_L432KC
 
+### note: warning 6 < gcc < 7 was resolved with installation of 2017 gcc toolchain
+### note: generated bin files failed for unknown reason, nucleo board was not flashed
+### after successfully flashing bin file is deleted from nucleo flash drive
+### stlink utility was used to flash. 
+### after using stlink utility mbed compile --flash was able to flash nucleo flash drive
+
+# commands which do work on cygwin
+/cygdrive/c/Python27/Scripts/mbed detect
+/cygdrive/c/Python27/Scripts/mbed config --list
+/cygdrive/c/Python27/Scripts/mbed compile
+/cygdrive/c/Python27/Scripts/mbed compile --flash
+
+
+
