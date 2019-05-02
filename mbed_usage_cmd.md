@@ -11,3 +11,8 @@ touch main.cpp # write code
 mbed compile --target nucleo_l432kc --toolchain gcc_arm
 mbed compile --target nucleo_l432kc --toolchain gcc_arm -v
 mbed compile --target nucleo_l432kc --toolchain gcc_arm -v --flash
+
+mbed add https://os.mbed.com/users/Sissors/code/DS1820/#c591209285e9
+mbed remove DS1820
+mbed add https://os.mbed.com/users/hudakz/code/DS1820/
+
